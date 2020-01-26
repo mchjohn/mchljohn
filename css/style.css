@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #fdea0a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background-color: #222222;
+    color: #fdea0a;
+}
+
+/* LOGO  */
+.circle-logo {
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 20px;
+    color: #fdea0a;
+    text-align: center;
+    transform: rotate(-15deg);
+    width: 35px;
+    height: 35px;
+    background-color: #2e2d2d;
+    border-radius: 50%;
+}
+/* LOGO */
+
+/* CARTÃO DE APRESENTAÇÃO */
+#myCard {
+    color: #777;
+}
+
+.card-body h3 {
+    font-size: 30px;
+    color: #8B864E;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.card-body h5 {
+    font-size: 15px;
+    color: #777777;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+#myCard .container .row .container-fluid {
+    top: -20px;
+}
+
+#myCard img {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    width: 180px;
+}
+
+#myCard i {
+    font: 30px;
+    color: #555;
+}
+
+#myCard p {
+    font-weight: 500;
+}
+
+#myCard .card {
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #222222;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    background-color: #222222;
+}
+
+#myCard .card:hover {
+    background: #2c2c2c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #555;
+}
+
+.card-body p {
+    font-size: 20px;
+}
+
+.card-body p a {
+    text-decoration: underline;
+    color: #8B864E;
+}
+
+#myCard .card:hover i {
+    color: #fff;
+}
+
+#myCard .card:hover .card-body p .link-project {
+    color: #fdea0a;
+}
+
+#myCard .card i:hover {
+    color: #fdea0a;
+}
+/* CARTÃO DE APRESENTAÇÃO */
+
+/* formulário de contato */
+form .card-header {
+    background-color: #555555;
+}
+
+form .i-name {
+    background-color: #55555515;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 11px 10px;
+}
+
+form .i-email {
+    background-color: #55555515;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 7.5px;
+}
+
+form .i-phone {
+    background-color: #55555515;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 11px 9px;
+}
+
+form .i-text-area {
+    background-color: #55555515;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 21px 7.5px;
+}
+
+form .coffe {
+    color: #696969;
+}
+/* formulário de contato */
+
+@media (min-width: 600px) 
+{
+    #myCard img {
+        width: 280px;
+    }
+
+    .card-body p {
+        font-size: 28px;
+    }
+
+    form .i-text-area {
+        padding: 26px 7.5px;
+    }
+
+    .card-group p {
+        font-size: 17px;
+    }
+}
