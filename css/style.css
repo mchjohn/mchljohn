@@ -96,16 +96,12 @@ html, body {
 }
 
 .card-body p a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #8B864E;
 }
 
 #myCard .card:hover i {
     color: #fff;
-}
-
-#myCard .card:hover .card-body p .link-project {
-    color: #fdea0a;
 }
 
 #myCard .card i:hover {
