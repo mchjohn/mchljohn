@@ -169,3 +169,19 @@ form .coffe {
         font-size: 17px;
     }
 }
+
+.other-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.op {
+    width: 230px;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+}
