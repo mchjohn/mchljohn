@@ -1,0 +1,1 @@
+menuApp = new MobileMenu()

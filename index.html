@@ -5,246 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:image" content="https://res.cloudinary.com/sk84all/image/upload/v1616946504/Screenshot_6_sbmto4.png" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- global -->
+    <link rel="stylesheet" href="css/menu.css"> <!-- menu -->
+    <link rel="stylesheet" href="css/informationCard.css"> <!-- card de info. -->
+    <link rel="stylesheet" href="css/projects.css">  <!-- card de projetos -->
+    <link rel="stylesheet" href="css/contact.css">  <!-- formulario de contato -->
+    <link rel="stylesheet" href="css/footer.css">  <!-- rodapé -->
+
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
     <link rel="shortcut icon" href="favicon.ico">
-    <title>Port. Michel John</title>
+    <title>Michel John</title>
 </head>
 <body>
     <!-- menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <div class="circle-logo">
-                    <p>mj.</p>
-                </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
-                    </li>
+    <nav id="home">
+        <div class="menu">
+            <div class="logo-nav">
+                <a class="menu-logo" href="#">
+                    <div class="circle-logo">
+                        <p>mj.</p>
+                    </div>
+                </a>
+                
+                <ul id="navigation" class="hide-menu">
+                    <li><a href="#home" onclick="activeLink1()" id="home">Home</a></li>
+                    <li><a href="#about" onclick="activeLink2()" id="about">Sobre</a></li>
+                    <li><a href="#project" onclick="activeLink3()" id="project">Projetos</a></li>
+                    <li><a href="#contact" onclick="activeLink4()" id="contact">Contato</a></li>
                 </ul>
             </div>
+
+            <div class="menu-container">
+                <div class="menu-bars">
+                    <div class="bar1 bar"></div>
+                    <div class="bar2 bar"></div>
+                    <div class="bar3 bar"></div>
+                </div>
+            </div>
+            
         </div>
     </nav>
     <!-- menu -->
 
-    <!-- card com minhas informações -->
-    <div class="container-fluid" id="home">
-        <section id="myCard">
-            <div class="container my-3 py-5 text-center">
-                <div class="row">
-                    <div class="container-fluid justify-content-center col-lg-12 col-md-12">
-                        <div class="card">
-                            <div class="card-body" id="about">
-                                <img src="img/profile.jpg" alt="michel john" class="img-fluid rounded-circle">
-                                <h3>Michel John</h3>
-                                <h5>Fullstack Developer em Formação</h5>
-                                <p>Olá ✌️, meu nome é Michel John (sim, meu pai é fã dos Beatles e meu irmão se chama... você já sabe 😂), estudante 🎓 do 6º período de Sistemas de Informação na <a href="https://www.uva.br/" target="_blank">Universidade Veiga de Almeida - RJ</a></p>
-                                <p>Servo de Deus 🛐, fissurado por skateboard 🛹. </p>
-                                <p>Um entusiasta de tecnologia, apaixonado por codar 💻. Ansioso por aprender novas habilidades e adicioná-las à lista 🧙‍.</p>
-                                <p>Conheça os meus <a href="#project" class="link-project">projetos realizados</a> durante minha jornada de estudos em programação.</p>
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="p-4">
-                                        <a href="https://www.linkedin.com/in/micheljohn/" target="_blank">
-                                            <i class="fa fa-linkedin"></i>
-                                        </a>
-                                    </div>
-                                    <div class="p-4">
-                                        <a href="https://github.com/mchjohn" target="_blank">
-                                            <i class="fa fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- card com minhas informações -->
-
-        <div id="project" class="mb-5"></div>
-        <!-- projetos -->
-        <div class="row mb-5">
-            <div class="col-12">
-                <div class="card-group justify-content-center">
-                    <div class="card mr-5 col-xs-12 col-sm-3 col-md-3 col-lg-3 mb-5">
-                        <img src="img/calc-1.png" class="w-50 p-3 card-img-top">
-                        <div class="card-body">
-                            <h4 class="card-title">Calculadora de Salário Líquido</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 JS VueJs</h6>
-                            <p class="card-text">Projeto desenvolvido para ajudar os colegas de trabalho, pois estavam sempre fazendo as contas para verificar as horas extra, quanto tinha a receber, valor da hora e etc. Pensando nisso fiz essa calculadora onde é possível calcular salário/hora, hora extra, descontos de INSS e IRPF.</p>
-                            <a href="https://mchjohn.github.io/net-salary-calculator-vuejs" target="_blank" class="card-link">Confira o projeto aqui!</a>
-                        </div>
-                    </div>
-                    <div class="card mr-5  col-xs-12 col-sm-3 col-md-3 col-lg-3 mb-5">
-                        <img src="img/skate-1.png" class="w-50 p-3 card-img-top">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog Skate por todos</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">NodeJs</h6>
-                            <p class="card-text">Um blog de notícias e artigos sobre skate, onde qualquer pessoa pode postar um artigo ou encontrar notícias e dicas sobre o mundo do carrinho.
-                            A ideia do blog é que independentemente do tamanho do evento, seja ele um best trick, uma competição profissional ou amadora, ou até mesmo um churraskate entre amigos, possa ser divulgado igualmente aqui.
-                            </p>
-                            <a href="https://mchjohn.github.io/blog_news_skate" target="_blank" class="card-link">Confira o frontend do projeto aqui!</a>
-                            <br>
-                            <br>
-                            <a href="https://github.com/mchjohn/skate-for-all" target="_blank" class="card-link">Confira o projeto inteiro aqui!</a>
-                        </div>
-                    </div>
-                    <div class="card  col-xs-12 col-sm-3 col-md-3 col-lg-3 mb-5">
-                        <img src="img/game-1.png" class="w-50 p-3 card-img-top">
-                        <div class="card-body">
-                            <h4 class="card-title">Jogo da Forca</h4>
-                            <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 JS</h6>
-                            <p class="card-text">Game desenvolvido inicialmente para um trabalho da faculdade, e por recomendação do professor adicionei um layout e transformei em um site, todos os desenhos foram feitos com css puro, não foram utilizadas nem uma imagem.</p>
-                            <a href="https://mchjohn.github.io/jogo-da-forca/" target="_blank" class="card-link">Confira o projeto aqui!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- projetos -->
-
-        <!-- outros projetos -->
-        <div class="other-projects">
-            <div class="op">
-                <img src="img/todo.png" width="70px">
-                <h4>App Todo</h4>
-                <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 JS</h6>
-                <p class="card-text">App todo list totalmente responsivo para organizar suas tarefas.</p>
-                <a href="https://mchjohn.github.io/app_todo/" target="_blank" class="card-link">Confira o projeto aqui!</a>
+    <!-- card de informações -->
+    <div class="card-container">
+        
+        <div class="container-about">
+            <div class="card-img">
+                <img src="img/profile.jpg" alt="michel john">
             </div>
 
-            <div class="op">
-                <img src="img/blog.png" width="70px">
-                <h4>Devario</h4>
-                <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 FlexBox</h6>
-                <p class="card-text">Deve diário, posto conteúdo ensinando algumas coisas que tenho aprendido no meus estudos de desenvolvimento de software.</p>
-                <a href="https://mchjohn.github.io/devario/" target="_blank" class="card-link">Confira o projeto aqui!</a>
-            </div>
-
-            <div class="op">
-                <img src="img/soccer.png" width="70px">
-                <h4>Quilombos da Bola</h4>
-                <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 JS</h6>
-                <p class="card-text">Site para o projeto social da comunidade em que eu moro.</p>
-                <a href="https://mchjohn.github.io/quilombos-da-bola/" target="_blank" class="card-link">Confira o projeto aqui!</a>
-            </div>
-
-            <div class="op">
-                <img src="img/wolf.png" width="70px">
-                <h4>Wildbeast Grid Layout</h4>
-                <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 Grid Layout</h6>
-                <p class="card-text">Projeto desenvolvido com base no curso da Origamid para aprender CSS Grid Layout.</p>
-                <a href="https://mchjohn.github.io/wildbeast-grid/" target="_blank" class="card-link">Confira o projeto aqui!</a>
-            </div>
-
-            <div class="op">
-                <img src="img/flex-phone.png" width="70px">
-                <h4>FlexBlog</h4>
-                <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 FlexBox</h6>
-                <p class="card-text">Projeto desenvolvido com base no curso da Origamid para aprender CSS FlexBox Layout.</p>
-                <a href="https://mchjohn.github.io/ori-flexbox/" target="_blank" class="card-link">Confira o projeto aqui!</a>
-            </div>
-
-            <div class="op">
-                <img src="img/ninja.png" width="70px">
-                <h4>Ninja Go</h4>
-                <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 VueJs</h6>
-                <p class="card-text">Game feito com VueJS, Ninja x Robô, onde um ataca o outro, ganha quem zerar a vida do adversario. É gerado um log onde mostra o dano de cada ataque.</p>
-                <a href="https://mchjohn.github.io/ninja-go/" target="_blank" class="card-link">Confira o projeto aqui!</a>
-            </div>
+            <h3>Michel John</h3>
+            <h5>Fullstack Developer em Formação</h5>
+            <p>Olá ✌️, meu nome é Michel John (sim, meu pai é fã dos Beatles e meu irmão se chama... você já sabe 😂), estudante 🎓 do 6º período de Sistemas de Informação na <a href="https://www.uva.br/" target="_blank">Universidade Veiga de Almeida - RJ</a></p>
+            <p id="about">Servo de Deus 🛐, fissurado por skateboard 🛹. </p>
+            <p>Um entusiasta de tecnologia, apaixonado por codar 💻. Ansioso por aprender novas habilidades e adicioná-las à lista 🧙‍.</p>
+            <p>Veja os 👉 <a href="#project" class="link-project">projetos desenvolvidos</a> em minha jornada de estudos.</p>
             
-            <div class="op">
-                <img src="img/guia-per.png" width="70px">
-                <h4>Guia Perguntas</h4>
-                <h6 class="card-subtitle mb-2 text-muted">HTML5 CSS3 NodeJs MySQL</h6>
-                <p class="card-text">Plataforma de perguntas e respostas. Onde o usuário pode fazer perguntas anônimas e responder de forma anônima.</p>
-                <a href="https://github.com/mchjohn/guia-perguntas" target="_blank" class="card-link">Confira o projeto aqui!</a>
+            <div class="container-icons">
+                <a href="https://www.linkedin.com/in/micheljohn/" target="_blank">
+                    <img alt="Linkedin" src="img/linkedin.png" />
+                </a>
+                <a href="https://github.com/mchjohn" target="_blank">
+                    <img alt="GitHub" src="img/github.png" />
+                </a>
             </div>
         </div>
-        <!-- outros projetos -->
-
-        <div class="mb-5"></div>
-        <!-- formulário para contato -->
-        <div class="row justify-content-center mt-5" id="contact">
-            <div class="col-12 col-md-8 col-lg-6 pb-5">
-                <form action="https://formspree.io/myyerwgy" method="POST" target="_blank">
-                    <div class="card border-dark rounded-0">
-                        <div class="card-header p-0">
-                            <div class="bg-dark text-white text-center py-2">
-                                <h3 class="pl-1 pr-1"><i class="fa fa-envelope"></i>  Deseja falar comigo?</h3>
-                                <p class="m-0 coffe">Me chame para tomar um café!</p>
-                            </div>
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text i-name"><i class="fa fa-user text-info"></i></div>
-                                    </div>
-                                    <input type="text" class="form-control  border-left-0" id="name" name="name" placeholder="Nome completo" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text i-email"><i class="fa fa-envelope text-info"></i></div>
-                                    </div>
-                                    <input type="email" class="form-control  border-left-0" id="email" name="email" placeholder="Digite seu Email" required>
-                                </div>
-                            </div>
-    
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text i-phone"><i class="fa fa-phone text-info"></i></div>
-                                    </div>
-                                    <input type="tel" class="form-control  border-left-0" id="phone" name="phone" placeholder="Número para contato" required>
-                                </div>
-                            </div>
-    
-                            <div class="form-group">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text i-text-area"><i class="fa fa-comment text-info"></i></div>
-                                    </div>
-                                    <textarea class="form-control border-left-0" placeholder="Digite sua mensagem" required name="mensagem"></textarea>
-                                </div>
-                            </div>
-    
-                            <div class="text-center">
-                                <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
-                            </div>
-                        </div>
-    
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- formulário para contato -->
-
+                        
     </div>
- 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- card de informações -->
+
+    <!-- projetos -->
+    <div id="container-projects" class="owl-carousel owl-theme">
+        <div class="card-project item">
+            <img src="img/calc.png" alt="projeto">
+            <h2>Calculadora de Salário Líquido</h2>
+            <h5>HTML5 CSS3 JS VueJs</h5>
+            <p>Projeto desenvolvido para ajudar os colegas de 
+                trabalho, pois estavam sempre fazendo as contas 
+                para verificar as horas extra, quanto tinha a receber, 
+                valor da hora e etc. Pensando nisso fiz essa calculadora 
+                onde é possível calcular salário/hora, hora extra, 
+                descontos de INSS e IRPF.</p>
+            <a target="_blank" href="https://mchjohn.github.io/net-salary-calculator-vuejs">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/skateboard.png" alt="projeto">
+            <h2>Blog Skate por todos</h2>
+            <h5>NodeJs</h5>
+            <p>Um blog de notícias e artigos sobre skate, 
+                onde qualquer pessoa pode postar um artigo ou 
+                encontrar notícias e dicas sobre o mundo do carrinho. 
+                A ideia do blog é que independentemente do tamanho 
+                do evento, seja ele um best trick, uma competição 
+                profissional ou amadora, ou até mesmo um churraskate 
+                entre amigos, possa ser divulgado igualmente aqui. </p>
+            <a target="_blank" href="https://mchjohn.github.io/blog_news_skate">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/game.png" alt="projeto">
+            <h2>Jogo da Forca</h2>
+            <h5>HTML5 CSS3 JS</h5>
+            <p>Game desenvolvido inicialmente para um trabalho da 
+                faculdade, e por recomendação do professor adicionei 
+                um layout e transformei em um site, todos os 
+                desenhos foram feitos com css puro, não foram 
+                utilizadas nem uma imagem.</p>
+            <a target="_blank" href="https://mchjohn.github.io/jogo-da-forca/">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/to-do-list.png" alt="projeto">
+            <h2>App Todo</h2>
+            <h5>HTML5 CSS3 JS</h5>
+            <p>App todo list totalmente responsivo para organizar 
+                suas tarefas.</p>
+            <a target href="https://mchjohn.github.io/app_todo/">Confira o projeto aqui.</a>
+        </div>
+    </div>
+    <!-- projetos -->
+
+    <!-- formulário de contato -->
+    <div class="contact-form">
+        <div class="form">
+            <div class="input-fields">
+                <input type="text" name="" id="" placeholder="Nome">
+                <input type="text" name="" id="" placeholder="Email">
+                <input type="text" name="" id="" placeholder="Telefone">
+            </div>
+            <div class="msg">
+                <textarea placeholder="Mensagem"></textarea>
+                <div class="btn">Enviar</div>
+            </div>
+        </div>
+    </div>
+    <!-- formulário de contato -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container-icons">
+            <a href="https://www.linkedin.com/in/micheljohn/" target="_blank">
+                <img alt="Linkedin" src="img/linkedin.png" />
+            </a>
+            <a href="https://github.com/mchjohn" target="_blank">
+                <img alt="GitHub" src="img/github.png" />
+            </a>
+            <a href="https://github.com/mchjohn" target="_blank">
+                <img alt="GitHub" src="img/github.png" />
+            </a>
+        </div>
+        <p class="versicle"> Porque não temos aqui cidade permanente, mas buscamos a vindoura.</p>
+        <p class="cap">Hebreus 13:14</p>
+        <p class="copy">© 2021 | michel john</p>
+    </footer>
+    <!-- footer -->
+
+    <script src="js/activeLink.js"></script>
+    <script src="js/MobileMenu.js"></script>
+    <script src="js/menuApp.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 60,
+                center:true,
+                merge:true,
+                dots: false,
+                responsive: {
+                    0: {
+                        margin: 100,
+                        items: 1
+                    },
+                    360: {
+                        margin: 250,
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>

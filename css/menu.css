@@ -1,0 +1,119 @@
+nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  min-height: 60px;
+  background-color: #222222;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 7%;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* LOGO  */
+.circle-logo {
+  font-family: 'Zhi Mang Xing', cursive;
+  font-size: 20px;
+  color: #fdea0a;
+  text-align: center;
+  transform: rotate(-15deg);
+  width: 35px;
+  height: 35px;
+  background-color: #2e2d2d;
+  border-radius: 50%;
+}
+/* LOGO */
+
+.menu ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+}
+
+.menu a {
+  display: inline;
+  color: rgba(255,255,255,.5);
+  transition: ease-in .1s;
+}
+
+.menu a:hover {
+  color: rgba(255,255,255,1);
+}
+
+.menu .home {
+  color: #fff;
+}
+.menu .about {
+  color: #fff;
+}
+.menu .project {
+  color: #fff;
+}
+.menu .contact {
+  color: #fff;
+}
+
+@media (max-width: 600px) 
+{
+  .menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .logo-nav {
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+    width: unset;
+  }
+
+  .menu ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* menu hamburger */
+
+  .menu {
+    margin: 10px;
+    cursor: pointer;
+    padding: 3px;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #E0ECF8;
+    border-radius: 10px;
+    transition: all 0.7s;
+  }
+
+  .d-none {
+    background: transparent;
+  }
+
+  .hide-menu {
+    display: none;
+  }
+
+  .rotate {
+    transform: rotateZ(399deg) scaleX(1.2) translate(5px, 8px);
+  }
+
+  .rotate2 {
+    transform: rotateZ(-399deg) scaleX(1.2) translate(3px, -5px);
+  }
+  /* menu hamburger */
+}

@@ -1,0 +1,23 @@
+footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #222222;
+}
+
+footer p {
+  font-size: .8em;
+}
+
+.versicle {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.cap {
+  font-size: .7em;
+}
+
+.copy {
+  margin-top: 30px;
+}
