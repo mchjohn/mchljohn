@@ -32,7 +32,7 @@
                 <ul id="navigation" class="hide-menu">
                     <li><a href="#home" onclick="activeLink1()" id="home">Home</a></li>
                     <li><a href="#about" onclick="activeLink2()" id="about">Sobre</a></li>
-                    <li><a href="#project" onclick="activeLink3()" id="project">Projetos</a></li>
+                    <li><a href="#project1" onclick="activeLink3()" id="project">Projetos</a></li>
                     <li><a href="#contact" onclick="activeLink4()" id="contact">Contato</a></li>
                 </ul>
             </div>
@@ -60,11 +60,11 @@
             <h3>Michel John</h3>
             <h5>Fullstack Developer em Formação</h5>
             <p>Olá ✌️, meu nome é Michel John (sim, meu pai é fã dos Beatles e meu irmão se chama... você já sabe 😂), estudante 🎓 do 6º período de Sistemas de Informação na <a href="https://www.uva.br/" target="_blank">Universidade Veiga de Almeida - RJ</a></p>
-            <p id="about">Servo de Deus 🛐, fissurado por skateboard 🛹. </p>
-            <p>Um entusiasta de tecnologia, apaixonado por codar 💻. Ansioso por aprender novas habilidades e adicioná-las à lista 🧙‍.</p>
-            <p>Veja os 👉 <a href="#project" class="link-project">projetos desenvolvidos</a> em minha jornada de estudos.</p>
+            <p>Servo de Deus 🛐, fissurado por skateboard <img src="img/skate.png" alt="skate">. </p>
+            <p>Um entusiasta de tecnologia, apaixonado por codar 💻. Ansioso por aprender novas habilidades e adicioná-las à lista <img src="img/mago.png" alt="mago">‍.</p>
+            <p>Veja os 👉 <a href="#project1" class="link-project">projetos desenvolvidos</a> em minha jornada de estudos.</p>
             
-            <div class="container-icons">
+            <div class="container-icons" id="about">
                 <a href="https://www.linkedin.com/in/micheljohn/" target="_blank">
                     <img alt="Linkedin" src="img/linkedin.png" />
                 </a>
@@ -78,7 +78,7 @@
     <!-- card de informações -->
 
     <!-- projetos -->
-    <div id="container-projects" class="owl-carousel owl-theme">
+    <div id="container-projects" class="owl-carousel owl-theme" id="project">
         <div class="card-project item">
             <img src="img/calc.png" alt="projeto">
             <h2>Calculadora de Salário Líquido</h2>
@@ -93,6 +93,36 @@
         </div>
 
         <div class="card-project item">
+            <img src="https://raw.githubusercontent.com/mchjohn/images/main/quilombosfc/Screenshot_2021-03-25-16-30-03-214_com.quilombos.jpg" alt="projeto">
+            <h2>App Quilombos da Bola FC</h2>
+            <h5>React-Native</h5>
+            <p>Aplicativo desenvolvido para um projeto social de futebol
+                 da comunidade do Campo Belo em Nova Iguaçu.
+                No app você consegue ver as informações dos jogadores, 
+                noticias e mais.</p>
+            <a target="_blank" href="https://github.com/mchjohn/quilombosfc">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="https://raw.githubusercontent.com/mchjohn/images/main/tasklist/IMG_20210318_212454.jpg" alt="projeto">
+            <h2>App Lista de Tarefas</h2>
+            <h5>React-Native</h5>
+            <p>Nesse app é possível adicionar tarefas a partir de um button 
+                e input, mudar a data de conclusão da tarefa, marcar como 
+                concluída. Arrastando para o lado exclui as tarefas.</p>
+            <a target="_blank" href="https://github.com/mchjohn/tasklist">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/netflix.png" alt="projeto">
+            <h2>Clone do Netflix</h2>
+            <h5>ReactJs</h5>
+            <p>Esse projeto consiste em um clone do site do Netflix, 
+                totalmente responsivo. Foi desenvolvido com ReactJs.</p>
+            <a target="_blank" href="https://github.com/mchjohn/clone-netflix">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
             <img src="img/skateboard.png" alt="projeto">
             <h2>Blog Skate por todos</h2>
             <h5>NodeJs</h5>
@@ -103,7 +133,10 @@
                 do evento, seja ele um best trick, uma competição 
                 profissional ou amadora, ou até mesmo um churraskate 
                 entre amigos, possa ser divulgado igualmente aqui. </p>
-            <a target="_blank" href="https://mchjohn.github.io/blog_news_skate">Confira o projeto aqui.</a>
+            <a target="_blank" href="https://mchjohn.github.io/blog_news_skate">Confira o projeto aqui (frontend).</a>
+            <br>
+            <br>
+            <a target="_blank" href="https://github.com/mchjohn/skate-for-all">Confira o projeto aqui (frontend + backend).</a>
         </div>
 
         <div class="card-project item">
@@ -123,8 +156,48 @@
             <h2>App Todo</h2>
             <h5>HTML5 CSS3 JS</h5>
             <p>App todo list totalmente responsivo para organizar 
-                suas tarefas.</p>
+                suas tarefas. Feito com JavaScript puro.</p>
             <a target href="https://mchjohn.github.io/app_todo/">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/pokeball.png" alt="projeto">
+            <h2>Pokedex</h2>
+            <h5>JavaScript</h5>
+            <p>Site Pokedex, com consumo da API https://pokeapi.co/.
+                Utilizando JavaScript puro, Fetch API .</p>
+            <a target href="https://mchjohn.github.io/pokedex/">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/ninja.png" alt="projeto">
+            <h2>Jogo Ninja Go</h2>
+            <h5>VueJs</h5>
+            <p>Basicamente você será o Ninja, seu objetivo é matar o Robô. 
+                Clicando em atacar, tanto o Ninja quanto o Robô irá aplicar um valor 
+                randômico em dano. Já o Ataque Especial, aplica um dano um pouco maior, 
+                e o Curar, restaura um valor randômico da vida do Ninja, porem o Ninja não 
+                aplicara dano ao Robô, mas o Robô aplicara dano ao Ninja.</p>
+            <a target href="https://mchjohn.github.io/ninja-go/">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/blog.png" alt="projeto">
+            <h2>devario - Deve Diário</h2>
+            <h5>HTML CSS</h5>
+            <p>Um blog criado nu intuito de escrever sobre algumas coisas que tenho 
+                aprendido durante minha formação fullstack, para fixar o conteúdo 
+                e ajudar a quem desejar.</p>
+            <a target href="https://mchjohn.github.io/devario/">Confira o projeto aqui.</a>
+        </div>
+
+        <div class="card-project item">
+            <img src="img/guia-per.png" alt="projeto">
+            <h2>Guia Perguntas</h2>
+            <h5>NodeJs Express MySQL</h5>
+            <p>Plataforma de perguntas e respostas no estilo YaHoo Resposta. 
+                Onde o usuário pode fazer perguntas de forma anônima e responder de forma anônima.</p>
+            <a target href="https://github.com/mchjohn/guia-perguntas">Confira o projeto aqui.</a>
         </div>
     </div>
     <!-- projetos -->

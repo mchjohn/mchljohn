@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+.container-about img {
+  width: 30px;
+}
+
 .card-img {
   display: flex;
   justify-content: center;
