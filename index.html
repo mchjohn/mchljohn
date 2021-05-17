@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="https://res.cloudinary.com/sk84all/image/upload/v1616946504/Screenshot_6_sbmto4.png" />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/sk84all/image/upload/v1616946504/Screenshot_6_sbmto4.png" />
     <link rel="stylesheet" href="css/style.css"> <!-- global -->
     <link rel="stylesheet" href="css/menu.css"> <!-- menu -->
     <link rel="stylesheet" href="css/informationCard.css"> <!-- card de info. -->
-    <link rel="stylesheet" href="css/projects.css">  <!-- card de projetos -->
-    <link rel="stylesheet" href="css/contact.css">  <!-- formulario de contato -->
-    <link rel="stylesheet" href="css/footer.css">  <!-- rodapé -->
-
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/projects.css"> <!-- card de projetos -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- formulario de contato -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- rodapé -->
+    <link rel="stylesheet" href="css/carousel.css"> <!-- carousel -->
 
     <link rel="shortcut icon" href="favicon.ico">
     <title>Michel John</title>
 </head>
+
 <body>
     <!-- menu -->
-    <nav id="home">
+    <nav id="home1">
         <div class="menu">
             <div class="logo-nav">
                 <a class="menu-logo" href="#">
@@ -28,12 +29,13 @@
                         <p>mj.</p>
                     </div>
                 </a>
-                
+
                 <ul id="navigation" class="hide-menu">
-                    <li><a href="#home" onclick="activeLink1()" id="home">Home</a></li>
-                    <li><a href="#about" onclick="activeLink2()" id="about">Sobre</a></li>
+                    <li><a href="#home1" onclick="activeLink1()" id="home">Home</a></li>
+                    <li><a href="#about1" onclick="activeLink2()" id="about">Sobre</a></li>
+                    <li><a href="#skills1" onclick="activeLink2()" id="skills">Tecnologias</a></li>
                     <li><a href="#project1" onclick="activeLink3()" id="project">Projetos</a></li>
-                    <li><a href="#contact" onclick="activeLink4()" id="contact">Contato</a></li>
+                    <li><a href="#contact1" onclick="activeLink4()" id="contact">Contato</a></li>
                 </ul>
             </div>
 
@@ -44,14 +46,14 @@
                     <div class="bar3 bar"></div>
                 </div>
             </div>
-            
+
         </div>
     </nav>
     <!-- menu -->
 
     <!-- card de informações -->
-    <div class="card-container">
-        
+    <div id="about1" class="card-container">
+
         <div class="container-about">
             <div class="card-img">
                 <img src="img/profile.jpg" alt="michel john">
@@ -59,12 +61,16 @@
 
             <h3>Michel John</h3>
             <h5>Fullstack Developer em Formação</h5>
-            <p>Olá ✌️, meu nome é Michel John (sim, meu pai é fã dos Beatles e meu irmão se chama... você já sabe 😂), estudante 🎓 do 6º período de Sistemas de Informação na <a href="https://www.uva.br/" target="_blank">Universidade Veiga de Almeida - RJ</a></p>
+            <p>Olá ✌️, meu nome é Michel John (sim, meu pai é fã dos Beatles e meu irmão se chama... você já sabe 😂),
+                estudante 🎓 do 6º período de Sistemas de Informação na <a href="https://www.uva.br/"
+                    target="_blank">Universidade Veiga de Almeida - RJ</a></p>
             <p>Servo de Deus 🛐, fissurado por skateboard <img src="img/skate.png" alt="skate">. </p>
-            <p>Um entusiasta de tecnologia, apaixonado por codar 💻. Ansioso por aprender novas habilidades e adicioná-las à lista <img src="img/mago.png" alt="mago">‍.</p>
-            <p>Veja os 👉 <a href="#project1" class="link-project">projetos desenvolvidos</a> em minha jornada de estudos.</p>
-            
-            <div class="container-icons" id="about">
+            <p>Um entusiasta de tecnologia, apaixonado por codar 💻. Ansioso por aprender novas habilidades e
+                adicioná-las à lista <img src="img/mago.png" alt="mago">‍.</p>
+            <p>Veja os 👉 <a href="#project1" class="link-project">projetos desenvolvidos</a> em minha jornada de
+                estudos.</p>
+
+            <div class="container-icons">
                 <a href="https://www.linkedin.com/in/micheljohn/" target="_blank">
                     <img alt="Linkedin" src="img/linkedin.png" />
                 </a>
@@ -73,148 +79,185 @@
                 </a>
             </div>
         </div>
-                        
+
     </div>
     <!-- card de informações -->
 
-    <!-- projetos -->
-    <div id="container-projects" class="owl-carousel owl-theme" id="project">
-        <div class="card-project item">
-            <img src="img/calc.png" alt="projeto">
-            <h2>Calculadora de Salário Líquido</h2>
-            <h5>HTML5 CSS3 JS VueJs</h5>
-            <p>Projeto desenvolvido para ajudar os colegas de 
-                trabalho, pois estavam sempre fazendo as contas 
-                para verificar as horas extra, quanto tinha a receber, 
-                valor da hora e etc. Pensando nisso fiz essa calculadora 
-                onde é possível calcular salário/hora, hora extra, 
-                descontos de INSS e IRPF.</p>
-            <a target="_blank" href="https://mchjohn.github.io/net-salary-calculator-vuejs">Confira o projeto aqui.</a>
+    <!-- carousel -->
+    <div class="carousel-container" id="project1">
+
+        <div class="carousel">
+            <div class="nav nav-left">
+                <div class="ion-chevron-left carousel-arrow-icon-left"><img src="./img/left-arrow.png" alt="Anterior"></div>
+            </div>
+
+            <div class="carousel-content">
+
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="img/calc.png" alt="projeto">
+                        <h2>Calculadora de Salário Líquido</h2>
+                        <h5>HTML5 CSS3 JS VueJs</h5>
+                        <p>Calculadora desenvolvida com VueJs. É possível calcular os 
+                            descontos de INSS e IRRF, valor da hora extra a 50% e 100% 
+                            e valor total das horas extras, calcula total de 
+                            descontos e salário líquido. Esse projeto hospedado no 
+                            GitHub pages e foi muito utilizado por meus colegas de trabalho.</p>
+                        <a target="_blank" href="https://mchjohn.github.io/net-salary-calculator-vuejs">Confira o
+                            projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="./img/soccer.png"
+                            alt="projeto">
+                        <h2>App Quilombos da Bola FC</h2>
+                        <h5>React-Native</h5>
+                        <p>Aplicação desenvolvida com React-Native. O objetivo desse app é 
+                            divulgar o trabalho de um projeto social de futebol da 
+                            comunidade Campo Belo, em Nova Iguaçu. O app mostra informações 
+                            dos jogadores, como foto, gols, posição, nome, idade e outros, 
+                            mostra notícias sobre o projeto e outras coisas.</p>
+                        <a target="_blank" href="https://github.com/mchjohn/quilombosfc">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="./img/list.png"
+                            alt="projeto">
+                        <h2>App Lista de Tarefas</h2>
+                        <h5>React-Native</h5>
+                        <p>Aplicativo desenvolvido com React-Native, para o usuário guardar 
+                            suas tarefas do dia a dia. Nesse app é possível adicionar tarefas,
+                             marca-las como concluídas e apaga-las. Na tela de adição de 
+                             tarefa tem um modal para selecionar a data da tarefa, há um 
+                             botão para mostrar apenas as tarefas concluídas.</p>
+                        <a target="_blank" href="https://github.com/mchjohn/tasklist">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="img/netflix.png" alt="projeto">
+                        <h2>Clone do Netflix</h2>
+                        <h5>ReactJs</h5>
+                        <p>Esse projeto é um clone da interface do NetFlix, e foi desenvolvido 
+                            com ReactJs. Tem a funcionalidade de rolar a lista de filmes e 
+                            series. As imagens e informações de filmes e series, são todos 
+                            da API do The Movie Database.</p>
+                        <a target="_blank" href="https://github.com/mchjohn/clone-netflix">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="img/skateboard.png" alt="projeto">
+                        <h2>Blog Skate por todos</h2>
+                        <h5>NodeJs</h5>
+                        <p>Um blog de notícias sobre skate, a ideia do blog é que qualquer 
+                            pessoa possa cadastrar-se no blog e adicionar as notícias sobre 
+                            skate da sua cidade. É possível editar o texto, adicionar vídeos, fazer
+                             upload de fotos para suas postagens.</p>
+                        <a target="_blank" href="https://mchjohn.github.io/blog_news_skate">Confira o projeto aqui
+                            (frontend).</a>
+                        <br>
+                        <br>
+                        <a target="_blank" href="https://github.com/mchjohn/skate-for-all">Confira o projeto aqui
+                            (frontend + backend).</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="img/game.png" alt="projeto">
+                        <h2>Jogo da Forca</h2>
+                        <h5>HTML5 CSS3 JS</h5>
+                        <p>Game desenvolvido inicialmente para um trabalho da
+                            faculdade, e por recomendação do professor adicionei
+                            um layout e transformei em um site, todos os
+                            desenhos foram feitos com css puro, não foram
+                            utilizadas nem uma imagem.</p>
+                        <a target="_blank" href="https://mchjohn.github.io/jogo-da-forca/">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="img/to-do-list.png" alt="projeto">
+                        <h2>App Todo</h2>
+                        <h5>HTML5 CSS3 JS</h5>
+                        <p>Aplicação de lista de tarefas totalmente responsivo. Da para adicionar
+                            tarefas, marca-las como concluída e excluir tarefas. 
+                            A aplicação foi feita utilizando JavaScript Vanilla.</p>
+                        <a target href="https://mchjohn.github.io/app_todo/">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="img/pokeball.png" alt="projeto">
+                        <h2>Pokedex</h2>
+                        <h5>JavaScript</h5>
+                        <p>Pokedex desenvolvida com JavaScript Vanilla. Os dados dos 
+                            pokemons foram pegos através do consumo da API Pokeapi. 
+                            Foi utilizado o Fetch API para fazer as requisições.</p>
+                        <a target href="https://mchjohn.github.io/pokedex/">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="card-project item">
+                        <img src="img/ninja.png" alt="projeto">
+                        <h2>Jogo Ninja Go</h2>
+                        <h5>VueJs</h5>
+                        <p>Basicamente você será o Ninja, seu objetivo é matar o Robô.
+                            Clicando em atacar, tanto o Ninja quanto o Robô irá aplicar um valor
+                            randômico em dano. Já o Ataque Especial, aplica um dano um pouco maior,
+                            e o Curar, restaura um valor randômico da vida do Ninja, porem o Ninja não
+                            aplicara dano ao Robô, mas o Robô aplicara dano ao Ninja.</p>
+                        <a target href="https://mchjohn.github.io/ninja-go/">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-project item">
+                        <img src="img/blog.png" alt="projeto">
+                        <h2>devario - Deve Diário</h2>
+                        <h5>HTML CSS</h5>
+                        <p>Um blog de artigos. A ideia do blog é publicar coisas que tenho 
+                            aprendido para poder colaborar com a comunidade, e fixar o 
+                            conteúdo do que tenho aprendido.</p>
+                        <a target href="https://mchjohn.github.io/devario/">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-project item">
+                        <img src="img/guia-per.png" alt="projeto">
+                        <h2>Guia Perguntas</h2>
+                        <h5>NodeJs Express MySQL</h5>
+                        <p>Plataforma de perguntas e respostas no estilo YaHoo Resposta.
+                            Onde o usuário pode fazer perguntas de forma anônima e responder de forma anônima.</p>
+                        <a target href="https://github.com/mchjohn/guia-perguntas">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-project item">
+                        <img src="img/jobscalc.png" alt="projeto">
+                        <h2>Jobs Calc</h2>
+                        <h5>NodeJs Express EJS SQLite</h5>
+                        <p>O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer,
+                            onde é possível cadastrar e excluir jobs (projetos), obtendo uma estimativa
+                            de custo de cada job. Além disso, é possível traçar o valor da hora da pessoa
+                            que estará usando o sistema. 💰</p>
+                        <a target href="https://github.com/mchjohn/maratona-discover">Confira o projeto aqui.</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nav nav-right">
+                <div class="ion-chevron-right carousel-arrow-icon-right"><img src="img/right-arrow.png" alt="Próximo"></div>
+            </div>
         </div>
 
-        <div class="card-project item">
-            <img src="https://raw.githubusercontent.com/mchjohn/images/main/quilombosfc/Screenshot_2021-03-25-16-30-03-214_com.quilombos.jpg" alt="projeto">
-            <h2>App Quilombos da Bola FC</h2>
-            <h5>React-Native</h5>
-            <p>Aplicativo desenvolvido para um projeto social de futebol
-                 da comunidade do Campo Belo em Nova Iguaçu.
-                No app você consegue ver as informações dos jogadores, 
-                noticias e mais.</p>
-            <a target="_blank" href="https://github.com/mchjohn/quilombosfc">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="https://raw.githubusercontent.com/mchjohn/images/main/tasklist/IMG_20210318_212454.jpg" alt="projeto">
-            <h2>App Lista de Tarefas</h2>
-            <h5>React-Native</h5>
-            <p>Nesse app é possível adicionar tarefas a partir de um button 
-                e input, mudar a data de conclusão da tarefa, marcar como 
-                concluída. Arrastando para o lado exclui as tarefas.</p>
-            <a target="_blank" href="https://github.com/mchjohn/tasklist">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/netflix.png" alt="projeto">
-            <h2>Clone do Netflix</h2>
-            <h5>ReactJs</h5>
-            <p>Esse projeto consiste em um clone do site do Netflix, 
-                totalmente responsivo. Foi desenvolvido com ReactJs.</p>
-            <a target="_blank" href="https://github.com/mchjohn/clone-netflix">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/skateboard.png" alt="projeto">
-            <h2>Blog Skate por todos</h2>
-            <h5>NodeJs</h5>
-            <p>Um blog de notícias e artigos sobre skate, 
-                onde qualquer pessoa pode postar um artigo ou 
-                encontrar notícias e dicas sobre o mundo do carrinho. 
-                A ideia do blog é que independentemente do tamanho 
-                do evento, seja ele um best trick, uma competição 
-                profissional ou amadora, ou até mesmo um churraskate 
-                entre amigos, possa ser divulgado igualmente aqui. </p>
-            <a target="_blank" href="https://mchjohn.github.io/blog_news_skate">Confira o projeto aqui (frontend).</a>
-            <br>
-            <br>
-            <a target="_blank" href="https://github.com/mchjohn/skate-for-all">Confira o projeto aqui (frontend + backend).</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/game.png" alt="projeto">
-            <h2>Jogo da Forca</h2>
-            <h5>HTML5 CSS3 JS</h5>
-            <p>Game desenvolvido inicialmente para um trabalho da 
-                faculdade, e por recomendação do professor adicionei 
-                um layout e transformei em um site, todos os 
-                desenhos foram feitos com css puro, não foram 
-                utilizadas nem uma imagem.</p>
-            <a target="_blank" href="https://mchjohn.github.io/jogo-da-forca/">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/to-do-list.png" alt="projeto">
-            <h2>App Todo</h2>
-            <h5>HTML5 CSS3 JS</h5>
-            <p>App todo list totalmente responsivo para organizar 
-                suas tarefas. Feito com JavaScript puro.</p>
-            <a target href="https://mchjohn.github.io/app_todo/">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/pokeball.png" alt="projeto">
-            <h2>Pokedex</h2>
-            <h5>JavaScript</h5>
-            <p>Site Pokedex, com consumo da API https://pokeapi.co/.
-                Utilizando JavaScript puro, Fetch API .</p>
-            <a target href="https://mchjohn.github.io/pokedex/">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/ninja.png" alt="projeto">
-            <h2>Jogo Ninja Go</h2>
-            <h5>VueJs</h5>
-            <p>Basicamente você será o Ninja, seu objetivo é matar o Robô. 
-                Clicando em atacar, tanto o Ninja quanto o Robô irá aplicar um valor 
-                randômico em dano. Já o Ataque Especial, aplica um dano um pouco maior, 
-                e o Curar, restaura um valor randômico da vida do Ninja, porem o Ninja não 
-                aplicara dano ao Robô, mas o Robô aplicara dano ao Ninja.</p>
-            <a target href="https://mchjohn.github.io/ninja-go/">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/blog.png" alt="projeto">
-            <h2>devario - Deve Diário</h2>
-            <h5>HTML CSS</h5>
-            <p>Um blog criado nu intuito de escrever sobre algumas coisas que tenho 
-                aprendido durante minha formação fullstack, para fixar o conteúdo 
-                e ajudar a quem desejar.</p>
-            <a target href="https://mchjohn.github.io/devario/">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/guia-per.png" alt="projeto">
-            <h2>Guia Perguntas</h2>
-            <h5>NodeJs Express MySQL</h5>
-            <p>Plataforma de perguntas e respostas no estilo YaHoo Resposta. 
-                Onde o usuário pode fazer perguntas de forma anônima e responder de forma anônima.</p>
-            <a target href="https://github.com/mchjohn/guia-perguntas">Confira o projeto aqui.</a>
-        </div>
-
-        <div class="card-project item">
-            <img src="img/jobscalc.png" alt="projeto">
-            <h2>Jobs Calc</h2>
-            <h5>NodeJs Express EJS SQLite</h5>
-            <p>O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer, 
-                onde é possível cadastrar e excluir jobs (projetos), obtendo uma estimativa 
-                de custo de cada job. Além disso, é possível traçar o valor da hora da pessoa 
-                que estará usando o sistema. 💰</p>
-            <a target href="https://github.com/mchjohn/maratona-discover">Confira o projeto aqui.</a>
-        </div>
     </div>
-    <!-- projetos -->
+    <!-- carousel -->
 
     <!-- formulário de contato -->
-    <div class="contact-form">
+    <div class="contact-form" id="contact1">
         <div class="form">
             <div class="input-fields">
                 <input type="text" name="" id="" placeholder="Nome">
@@ -223,7 +266,7 @@
             </div>
             <div class="msg">
                 <textarea placeholder="Mensagem"></textarea>
-                <div class="btn">Enviar</div>
+                <div class="btn"><a href="mailto">Enviar</a></div>
             </div>
         </div>
     </div>
@@ -238,9 +281,6 @@
             <a href="https://github.com/mchjohn" target="_blank">
                 <img alt="GitHub" src="img/github.png" />
             </a>
-            <a href="https://github.com/mchjohn" target="_blank">
-                <img alt="GitHub" src="img/github.png" />
-            </a>
         </div>
         <p class="versicle"> Porque não temos aqui cidade permanente, mas buscamos a vindoura.</p>
         <p class="cap">Hebreus 13:14</p>
@@ -251,34 +291,8 @@
     <script src="js/activeLink.js"></script>
     <script src="js/MobileMenu.js"></script>
     <script src="js/menuApp.js"></script>
+    <script src="js/carousel.js"></script>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".owl-carousel").owlCarousel({
-                items: 6,
-                loop: true,
-                margin: 60,
-                center:true,
-                merge:true,
-                dots: false,
-                responsive: {
-                    0: {
-                        margin: 100,
-                        items: 1
-                    },
-                    360: {
-                        margin: 250,
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            });
-        });
-    </script>
 </body>
+
 </html>

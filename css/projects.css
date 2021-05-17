@@ -1,7 +1,3 @@
-#container-projects {
-  width: 100%;
-}
-
 .card-project {
   min-width: 240px;
   padding: 8px;
@@ -21,13 +17,13 @@
 }
 
 .card-project img {
-  width: 55%;
+  width: 30%;
 }
 
 .card-project h2 {
   font-size: 20px;
   margin-bottom: 5px;
-  color: rgb(235, 235, 235);
+  color: #ebebeb;
 }
 
 .card-project h5 {
@@ -36,7 +32,7 @@
 
 .card-project p {
   font-size: 17px;
-  color: rgb(160, 160, 160);
+  color: #a0a0a0;
 }
 
 .card-project a {
@@ -46,4 +42,19 @@
 
 .card-project a:hover {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+
+  .card-project h2 {
+    font-size: 19px;
+  }
+  
+  .card-project h5 {
+    font-size: 13px;
+  }
+  
+  .card-project p {
+    font-size: 15px;
+  }
 }
