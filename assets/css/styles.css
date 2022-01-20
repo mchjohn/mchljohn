@@ -829,7 +829,8 @@ img {
 
 .project__img {
     width: 232px;
-    justify-self: center;
+    justify-self: flex-end;
+    margin-right: -24px;
 }
 
 /*==================== TESTIMONIAL ====================*/
@@ -1065,7 +1066,9 @@ img {
     }
 
     .project__img {
-        width: 200px;
+        width: 300px;
+        justify-self: flex-end;
+        margin-right: -17px;
     }
 
     .testimonial__data,
@@ -1113,6 +1116,11 @@ img {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .project__img {
+        justify-self: flex-end;
+        margin-right: -24px;
     }
 }
 
@@ -1196,6 +1204,7 @@ img {
 
     .about__img {
         width: 350px;
+        opacity: 0;
     }
 
     .about__description {
@@ -1259,9 +1268,14 @@ img {
     .project__container {
         background-color: var(--first-color-second);
         border-radius: 1rem;
-        padding: 3rem 2.5rem 0;
+        padding: 3rem 0 0 3rem;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
+    }
+
+    .project__img {
+        justify-self: flex-end;
+        margin-right: 0;
     }
 
     .project__data {
